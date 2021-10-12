@@ -7,6 +7,10 @@ import Header from './Components/header';
 import Content from './Components/content';
 //import Footer from components folder
 import Footer from './Components/footer';
+//import Create from components folder
+import Create from './Components/create';
+//import Read from components folder
+import Read from './Components/read';
 //import bootstrap css
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import Navbar, nav and container from bootstrap
@@ -37,6 +41,8 @@ class App extends Component {
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/header">Header</Nav.Link>
               <Nav.Link href="/footer">Footer</Nav.Link>
+              <Nav.Link href="/create">Create</Nav.Link>
+              <Nav.Link href="/read">Read</Nav.Link>
             </Nav>
           </Container>
         </Navbar>
@@ -46,6 +52,8 @@ class App extends Component {
           <Route path='/' component={Content} exact></Route>
           <Route path='/header' component={Header}></Route>
           <Route path='/footer' component={Footer}></Route>
+          <Route path='/create' component={Create}></Route>
+          <Route path='/read' component={Read}></Route>
         </Switch>
       </div>
       </Router>
